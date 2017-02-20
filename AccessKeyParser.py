@@ -2,8 +2,10 @@
 
 import csv
 
+ak_path = "./AccessKeyHolder/test_access_key.csv"
+
 class AccessKeyParser:
-    def __init__(self, path):
+    def __init__(self, path=ak_path):
         self.__AccessKeyId, self.__AccessKeySecrect = self.AkParsing(path)
 
     def AkParsing(self, path):
